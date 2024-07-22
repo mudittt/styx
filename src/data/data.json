@@ -64,7 +64,7 @@
         "gender":["Female"]
     },
     "1106189014":{
-        "name":"Regular Fit Ripstop cargo trousers",
+        "name":"Regular Fit cargo trousers",
         "img":["1106189014.jpeg","1106189014(2).jpeg"],
         "price":2999,
         "size":["XS","S","M","L","XL","XXL"],
@@ -80,7 +80,7 @@
         "gender":["Female"]
     },
     "1206831001":{
-        "name":"StormMove™ Unisex rain jacket",
+        "name":"StormMove™ Unisex jacket",
         "img":["1206831001.webp","1206831001(2).webp","1206831001(3).webp"],
         "price":4999,
         "size":["XS","S","M","L","XL","XXL"],
@@ -88,7 +88,7 @@
         "gender":["Male","Female"]
     },
     "1209027003":{
-        "name":"3-pack Xtra Life™ short trunks",
+        "name":"Xtra Life™ short trunks",
         "img":["1209027003.jpg","1209027003(2).webp"],
         "price":1499,
         "size":["XS","S","M","L","XL","XXL"],
@@ -96,7 +96,7 @@
         "gender":["Male"]
     },
     "1219459008":{
-        "name":"High Waist Cheeky Bikini bottoms",
+        "name":"High Waist Bikini bottoms",
         "img":["1219459008.jpeg","1219459008(2).webp"],
         "price":1299,
         "size":["XS","S","M","L","XL","XXL"],
@@ -104,7 +104,7 @@
         "gender":["Female"]
     },
     "1227155002":{
-        "name":"Slim Fit Ribbed vest top",
+        "name":"Slim Fit vest top",
         "img":["1227155002jpeg","1227155002(2).webp"],
         "price":599,
         "size":["XS","S","M","L","XL","XXL"],
@@ -112,7 +112,7 @@
         "gender":["Male"]
     },
     "1227157003":{
-        "name":"Loose Fit Printed T-shirt",
+        "name":"Loose Fit T-shirt",
         "img":["1227157003.jpeg","1227157003(2).jpeg"],
         "price":799,
         "size":["XS","S","M","L","XL",""],
@@ -144,7 +144,7 @@
         "gender":["Female"]
     },
     "1241337007":{
-        "name":"Ribbed sweetheart-neck T-shirt",
+        "name":"Ribbed T-shirt",
         "img":["1241337007.jpeg","1241337007(2).webp"],
         "price":499,
         "size":["XXS","XS","S","M","L","XL"],
@@ -152,7 +152,7 @@
         "gender":["Female"]
     },
     "1242812003":{
-        "name":"Slim Fit Easy-iron shirt",
+        "name":"Slim Fit shirt",
         "img":["1242812003.jpeg","1242812003(2).jpeg"],
         "price":1499,
         "size":["M","L","XL","XXL"],
