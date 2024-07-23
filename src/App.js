@@ -11,14 +11,19 @@ import FavouritesPage from "./components/FavouritesPage";
 import AccountPage from "./components/AccountPage";
 import NewsLetter from "./components/NewsLetter";
 import FindAStore from "./components/FindAStore";
-import Thankyou from "./components/Thankyou"
+import Thankyou from "./components/Thankyou";
+
+import { Provider } from "react-redux";
+import { store } from "./utilities/store";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <Provider store={store}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </Provider>
     </>
   );
 };

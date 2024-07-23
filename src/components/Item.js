@@ -1,6 +1,18 @@
-import src from "../assets/0998802012/0998802012.webp";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utilities/cartSlice";
 
 function Item({ data }) {
+  const dispatch = useDispatch();
+
+  const handleAddItem = (event) => {
+    id = event.target.id;
+    dispatch(
+      addItem({
+        id: id,
+      })
+    );
+  };
+
   return (
     <>
       {Object.entries(data).map(([k, value]) => {
@@ -19,8 +31,10 @@ function Item({ data }) {
               </div>
               <div className="col-span-6 mx-auto">
                 <button
+                  id={k}
                   class="select-none rounded-lg border border-gray-900 py-2 px-3 text-center align-middle font-sans text-xs text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300"
                   type="button"
+                  onClick={handleAddItem}
                 >
                   ADD
                 </button>
