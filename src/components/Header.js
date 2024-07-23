@@ -1,7 +1,12 @@
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+
+  const cartItems = useSelector((store)=> store.cart.cartItems);
+  const cartSize = Object.keys(cartItems).length;
+  
   return (
     <div className="grid grid-flow-col gap-4 max-w-screen-md mx-auto">
       <Link
@@ -47,7 +52,7 @@ function Header() {
         to={"/shoppingbag"}
         className="hover:underline flex font-light py-0 text-sm items-center justify-center"
       >
-        Shopping Bag(0)
+        {"Shopping Bag ["+cartSize+"]"}
       </Link>
     </div>
   );
