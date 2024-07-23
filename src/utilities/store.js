@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import genderSlice from "./genderSlice";
+import stockSlice from "./stockSlice";
 import cartSlice from "./cartSlice";
 
 export const store = configureStore({
     reducer:{
-        gender:genderSlice,
+        stock:stockSlice,
         cart:cartSlice
     }
 })
