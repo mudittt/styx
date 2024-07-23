@@ -62,26 +62,29 @@ data = {
     "0685816185":{
         "name":"Regular Fit T-Shirt",
         "img":[s10,s11],
-        "price":399,
+        "price":1399,
         "size":["XS","S","M","L","XL"],
         "type":"Tshirts",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "0956343001":{
         "name":"Slim Fit Polo shirt",
         "img":[s20,s21],
-        "price":799,
+        "price":1799,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Polo Shirts",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "0956343061":{
         "name":"Slim Fit Polo shirt",
         "img":[s30],
-        "price":799,
+        "price":1099,
         "size":["XS","S","M","L","XL",""],
         "type":"Polo Shirts",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "0970817001":{
         "name":"Regular Fit Sweatpants",
@@ -89,7 +92,8 @@ data = {
         "price":1499,
         "size":["M","L","XL"],
         "type":"Sweat Pants",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "0998802012":{
         "name":"Pyjama shirt and bottoms",
@@ -97,7 +101,8 @@ data = {
         "price":1999,
         "size":["XS","S","M","L"],
         "type":"Pyjamas",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1013956039":{
         "name":"Regular Fit Oxford shirt",
@@ -105,23 +110,26 @@ data = {
         "price":1499,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Shirts",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "1056633048":{
         "name":"Print-motif T-shirt",
         "img":[s70,s71],
-        "price":699,
+        "price":1699,
         "size":["XS","S","M","L"],
         "type":"Tshirts",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1089811001":{
         "name":"Long-sleeved jersey top",
         "img":[s80,s81],
-        "price":699,
+        "price":1699,
         "size":["XS","S","M","L"],
         "type":"Tops",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1106189014":{
         "name":"Regular Fit cargo trousers",
@@ -129,15 +137,17 @@ data = {
         "price":2999,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Cargo Trousers",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "1198432049":{
         "name":"Printed T-shirt",
         "img":[s100,s101],
-        "price":499,
+        "price":1499,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Tshirts",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1206831001":{
         "name":"StormMove™ Unisex jacket",
@@ -145,7 +155,8 @@ data = {
         "price":4999,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Jackets",
-        "gender":["Male","Female"]
+        "gender":["Male","Female"],
+        "quantity":0
     },
     "1209027003":{
         "name":"Xtra Life™ short trunks",
@@ -153,7 +164,8 @@ data = {
         "price":1499,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Short Trunks",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "1219459008":{
         "name":"High Waist Bikini bottoms",
@@ -161,23 +173,26 @@ data = {
         "price":1299,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Bikini Bottoms",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1227155002":{
         "name":"Slim Fit vest top",
         "img":[s140,s141],
-        "price":599,
+        "price":1599,
         "size":["XS","S","M","L","XL","XXL"],
         "type":"Vest Tops",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "1227157003":{
         "name":"Loose Fit T-shirt",
         "img":[s150,s151],
-        "price":799,
+        "price":2799,
         "size":["XS","S","M","L","XL",""],
         "type":"Tshirts",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "1228206001":{
         "name":"Relaxed Fit Cargo trousers",
@@ -185,31 +200,35 @@ data = {
         "price":2299,
         "size":["S","L","XL","XXL"],
         "type":"Cargo Trousers",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     },
     "1230537001":{
         "name":"Sheer crinkled skirt",
         "img":[s170,s171],
-        "price":1499,
+        "price":2499,
         "size":["XS","S","M","L","XXL"],
         "type":"Skirts",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1233256005":{
         "name":"Ribbed polo shirt",
         "img":[s180,s181],
-        "price":799,
+        "price":3799,
         "size":["XXS","XS","S","M","L","XL"],
         "type":"Polo Shirts",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1241337007":{
         "name":"Ribbed T-shirt",
         "img":[s190,s191],
-        "price":499,
+        "price":3499,
         "size":["XXS","XS","S","M","L","XL"],
         "type":"Tshirts",
-        "gender":["Female"]
+        "gender":["Female"],
+        "quantity":0
     },
     "1242812003":{
         "name":"Slim Fit shirt",
@@ -217,7 +236,8 @@ data = {
         "price":1499,
         "size":["M","L","XL","XXL"],
         "type":"Shirts",
-        "gender":["Male"]
+        "gender":["Male"],
+        "quantity":0
     }
 };
 

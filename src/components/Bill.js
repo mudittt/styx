@@ -1,6 +1,18 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Bill({text, action}) {
+
+  function calculateTotalPrice(cartItems){
+    let price=0;
+    for (key in cartItems){
+      price += cartItems[key].price*(cartItems[key].quantity + 1);
+    }
+    return price;
+  }
+  const cartItems = useSelector((store) => store.cart.cartItems);
+  const price = calculateTotalPrice(cartItems);
+
   return (
     <div className="col-span-3 text-sm my-5">
       <div className="p-2 border rounded-md max-w-xs mx-auto">
@@ -10,7 +22,7 @@ function Bill({text, action}) {
         </div>
         <div className="flex justify-between items-center mb-2">
           <span>Order value</span>
-          <span>Rs. 6,093.00</span>
+          <span>{"Rs. "+price+".00"}</span>
         </div>
         <div className="flex justify-between items-center mb-6">
           <span>Delivery</span>
@@ -18,7 +30,7 @@ function Bill({text, action}) {
         </div>
         <div className="flex justify-between items-center font-semibold mb-4">
           <span>Total</span>
-          <span>Rs. 6,093.00</span>
+          <span>{"Rs. "+price+".00"}</span>
         </div>
         <Link to={action}>
         <button className="w-full bg-black text-white py-2 rounded-md mb-4">

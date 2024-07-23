@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function AccountPage() {
   return (
     <div>
@@ -121,11 +123,13 @@ function AccountPage() {
               </span>
             </label>
           </div>
+          <Link to={"/thankyou"}>
           <div className="flex items-center justify-between">
             <button className="w-full bg-black text-white text-sm py-3 rounded-md mb-4">
               Continue to pay
             </button>
           </div>
+          </Link>
         </form>
       </div>
     </div>
