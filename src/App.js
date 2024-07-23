@@ -11,6 +11,7 @@ import FavouritesPage from "./components/FavouritesPage";
 import AccountPage from "./components/AccountPage";
 import NewsLetter from "./components/NewsLetter";
 import FindAStore from "./components/FindAStore";
+import Thankyou from "./components/Thankyou"
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const appRouter = createBrowserRouter([
       { path: "/favourites", element: <FavouritesPage /> },
       { path: "/shoppingbag", element: <ShoppingBag /> },
       { path: "/checkout", element: <CheckoutPage /> },
+      { path: "/thankyou", element: <Thankyou /> },
     ],
     // These children will get replaced by the <Outlet/> component
   },

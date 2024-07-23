@@ -1,4 +1,6 @@
-function Bill({text}) {
+import { Link } from "react-router-dom";
+
+function Bill({text, action}) {
   return (
     <div className="col-span-3 text-sm my-5">
       <div className="p-2 border rounded-md max-w-xs mx-auto">
@@ -18,9 +20,11 @@ function Bill({text}) {
           <span>Total</span>
           <span>Rs. 6,093.00</span>
         </div>
+        <Link to={action}>
         <button className="w-full bg-black text-white py-2 rounded-md mb-4">
           {text}
         </button>
+        </Link>
         <div className=" mb-4">
           <span className="block mb-2 text-sm font-extralight">We accept</span>
           <div className="flex flex-wrap justify-center">

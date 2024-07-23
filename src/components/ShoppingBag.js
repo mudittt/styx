@@ -9,7 +9,7 @@ function ShoppingBag() {
         <div className="col-span-9">
             <ShoppingBagItem />
         </div>
-        <Bill text={"Continue to checkout"}/>
+        <Bill text={"Continue to checkout"} action={"/checkout"}/>
       </div>
     </div>
   );

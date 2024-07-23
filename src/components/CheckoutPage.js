@@ -9,7 +9,7 @@ function CheckoutPage() {
         <div className="col-span-9">
             <AccountPage/>
         </div>
-        <Bill text={"Pay"}/>
+        <Bill text={"Pay"} action={"/thankyou"}/>
       </div>
     </div>
   )

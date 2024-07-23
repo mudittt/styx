@@ -1,20 +1,55 @@
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <>
     <div className="grid grid-flow-col gap-4 max-w-screen-md mx-auto">
-      <p className="flex font-light py-0 text-sm items-center justify-center">Customer Service</p>
-      <p className="flex font-light py-0 text-sm items-center justify-center">Newsletter</p>
-      <p className="flex font-light py-0 text-sm items-center justify-center">Find a store</p>
-      <div className="col-span-8 py-5 ">
-      <Logo/>
-      </div>
-      <p className="flex font-light py-0 text-sm items-center justify-center">My Account</p>
-      <p className="flex font-light py-0 text-sm items-center justify-center">Favourites</p>
-      <p className="flex font-light py-0 text-sm items-center justify-center">Shopping Bag(0)</p>
+      <Link
+        to={"/customerservice"}
+        className="hover:underline flex font-light py-0 text-sm items-center justify-center"
+      >
+        Customer Service
+      </Link>
+
+      <Link
+        to={"/newsletter"}
+        className="hover:underline flex font-light py-0 text-sm items-center justify-center"
+      >
+        Newsletter
+      </Link>
+
+      <Link
+        to={"/findastore"}
+        className="hover:underline flex font-light py-0 text-sm items-center justify-center"
+      >
+        Find a store
+      </Link>
+
+      <Link to={"/"} className="hover:underline col-span-8 py-5 flex justify-center items-center">
+        <Logo />
+      </Link>
+
+      <Link
+        to={"/account"}
+        className="hover:underline flex font-light py-0 text-sm items-center justify-center"
+      >
+        My Account
+      </Link>
+
+      <Link
+        to={"/favourites"}
+        className="hover:underline flex font-light py-0 text-sm items-center justify-center"
+      >
+        Favourites
+      </Link>
+
+      <Link
+        to={"/shoppingbag"}
+        className="hover:underline flex font-light py-0 text-sm items-center justify-center"
+      >
+        Shopping Bag(0)
+      </Link>
     </div>
-    </>
   );
 }
 
