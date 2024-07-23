@@ -2,10 +2,15 @@ import { useDispatch } from "react-redux";
 import { ToggleGender } from "../utilities/stockSlice";
 
 function SideBar() {
+  
+  // filter 
+  // when user selects a gender, we are dispatching an action
+  // all the logic of filtering out the data based on gender is done on the other side.
   const dispatch = useDispatch();
-
   const handleCheckboxChange = (event)=>{
-    const {id, checked} = event.target;
+    // id: male or female
+    // checked: checked or unchecked 
+    const {id, checked} = event.target; 
     dispatch(ToggleGender({
       id:id,
       checked:checked

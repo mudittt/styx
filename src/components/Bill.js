@@ -1,16 +1,39 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
+/* 
+
+here we have two option - 
+GOTO - 
+  checkout page OR 
+  thankyou page (after payment is done).
+
+
+for checkout page
+  text = "Continue to checkout"
+  action = "/checkout"
+
+for thankyou page
+  text = "pay"
+  action = "/thankyou"
+
+*/
 function Bill({text, action}) {
 
+  // loop through every object in cart and add its price*quantity to get the total price.
   function calculateTotalPrice(cartItems){
     let price=0;
     for (key in cartItems){
-      price += cartItems[key].price*(cartItems[key].quantity + 1);
+      price += cartItems[key].price*(cartItems[key].quantity + 1); 
+      // since all quantities are initialised with 0
     }
     return price;
   }
+
+  // here we are getting our global state : CART
   const cartItems = useSelector((store) => store.cart.cartItems);
+  
+  // calculated total price of items alreadt in the cart
   const price = calculateTotalPrice(cartItems);
 
   return (

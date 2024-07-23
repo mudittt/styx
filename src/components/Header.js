@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Header() {
-
-  const cartItems = useSelector((store)=> store.cart.cartItems);
-  const cartSize = Object.keys(cartItems).length;
   
+  
+  // here we are getting our global state : CART
+  const cartItems = useSelector((store) => store.cart.cartItems);
+  
+  // for showing the total number of items in cart on the header
+  const cartSize = Object.keys(cartItems).length;
+
   return (
     <div className="grid grid-flow-col gap-4 max-w-screen-md mx-auto">
       <Link
@@ -30,7 +34,10 @@ function Header() {
         Find a store
       </Link>
 
-      <Link to={"/"} className="hover:underline col-span-8 py-5 flex justify-center items-center">
+      <Link
+        to={"/"}
+        className="hover:underline col-span-8 py-5 flex justify-center items-center"
+      >
         <Logo />
       </Link>
 
@@ -52,7 +59,7 @@ function Header() {
         to={"/shoppingbag"}
         className="hover:underline flex font-light py-0 text-sm items-center justify-center"
       >
-        {"Shopping Bag ["+cartSize+"]"}
+        {"Shopping Bag [" + cartSize + "]"}
       </Link>
     </div>
   );

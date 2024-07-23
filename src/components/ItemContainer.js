@@ -4,6 +4,8 @@ import Item from "./Item"
 
 function ItemContainer() {
 
+  // here we are getting our global state : CART
+  // based on gender: we filter the data and send it to the Item
   const items = useSelector((store) => store.stock.items);
 
   return (

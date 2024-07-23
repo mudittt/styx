@@ -1,11 +1,15 @@
 import { useSelector, useDispatch } from "react-redux";
 import { clearItem } from "../utilities/cartSlice";
+import { Link } from "react-router-dom";
 
 function ShoppingBagItems() {
+  // here we are getting our global state : CART
   const dispatch = useDispatch();
-
   const cartItems = useSelector((store) => store.cart.cartItems);
 
+  // when user deletes an item from cart
+  // we send the id of that product to our reducer: clearItem
+  // which we then update the 'cartItems' global state
   const handleDelete = (event) => {
     const id = event.target.id;
     dispatch(
@@ -15,10 +19,22 @@ function ShoppingBagItems() {
     );
   };
 
+
+  // looping through every cart item
+  // if cart is empty, then show 'shimmer'.
   return (
     <>
-      {cartItems == null ? (
-        <div>hi</div>
+      {Object.keys(cartItems).length == 0 ? (
+        <div>
+          <p className="text-xs font-extralight">
+            Your cart is empty.
+          </p>
+          <Link to={"/"}>
+          <button className="bg-black w-2/6 text-white text-sm p-4 rounded-md my-4">
+            Browse now
+          </button>
+          </Link>
+        </div>
       ) : (
         Object.entries(cartItems).map(([k, value]) => {
           return (

@@ -2,10 +2,15 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../utilities/cartSlice";
 
 function Item({ data }) {
+  
+  // here we are dispatching an action for every time a user clicks on "add"
+  
   const dispatch = useDispatch();
-
   const handleAddItem = (event) => {
-    id = event.target.id;
+    id = event.target.id; // extract the id of the added item
+    
+    // dispatch an action or
+    // call addItems reducer to add that particular item in the global state: CART.
     dispatch(
       addItem({
         id: id,
@@ -13,6 +18,7 @@ function Item({ data }) {
     );
   };
 
+  // loop through the original(filtered/unfiltered) data.
   return (
     <>
       {Object.entries(data).map(([k, value]) => {

@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import data from "../assets/data";
 
 
+// simply loop through every item and 
+// check whether its for male or female or both
 const filter = (data, male, female) => {
     const filteredData = {};
     for (const key in data) {
@@ -35,6 +37,7 @@ const stockSlice = createSlice({
             id = action.payload.id;
             checked = action.payload.checked;
 
+            // if checked box was of male, then only update the male
             if(id=="male"){
                 state.male=checked;
             }
@@ -42,9 +45,11 @@ const stockSlice = createSlice({
                 state.female=checked;
             }
 
+            // filter data
             if(state.male || state.female){
                 state.items = filter(data, state.male, state.female);
             }
+            // both false means get back to original list
             else {
                 state.items=data;
             }
