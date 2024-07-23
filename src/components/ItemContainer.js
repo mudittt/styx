@@ -1,4 +1,4 @@
-import data from "../data/data.json"
+import data from "../assets/data"
 import Item from "./Item"
 
 function ItemContainer() {

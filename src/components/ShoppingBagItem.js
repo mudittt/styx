@@ -1,7 +1,9 @@
-import data from "../data/data.json";
-import src from "../assets/1233256005/1233256005(2).webp";
+// import data from "../data/data.json";
+// import src from "../assets/1233256005/1233256005(2).webp";
+import data from "../assets/data";
 
 function ShoppingBagItems() {
+  console.log(data["0685816185"].img);
   return (
     <>
       {Object.entries(data).map(([k, value]) => {
@@ -10,7 +12,7 @@ function ShoppingBagItems() {
             <div className="col-span-8 flex justify-items-end items-center">
               <>
                 <div className="w-28 inline-block mr-5">
-                  <img src={src} />
+                  <img src={value.img} />
                 </div>
                 <div className="text-left">
                   <p className="">{value.name}</p>

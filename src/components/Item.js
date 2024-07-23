@@ -10,7 +10,7 @@ function Item({ data }) {
               {/* {value.img.map((s) => {
                 return <img key={s} src={src} />;
               })} */}
-              <img src={src} />
+              <img src={value.img[0]} />
             </div>
             <div className="grid grid-flow-col py-4">
               <div className="col-span-6">
